@@ -1,0 +1,36 @@
+body {
+    margin: 5rem;
+    background-color: #93D0A4;
+}
+
+.textbox {
+    color: whitesmoke;
+    font-family: arial;
+    background-color: rgb(50, 50, 50, 0.2);
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child:first-child {
+    margin-right: 10px;
+} 
+
+iframe {
+    width: 90%;
+    height: 45%;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: blue;
+}

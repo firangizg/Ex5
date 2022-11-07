@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>CSS Manipulator</title>
+</head>
+<body>
+    <h1>CSS Manipulator</h1>
+    <div class="flex-container">
+        <div class="background">
+            <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proide sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        <div class="vertical">
+            <!--BORDER COLOR-->
+            <label for="border">Choose the border color:</label>
+            <input id="border-color" type="text" placeholder="Enter 'red','blue', or 'green'">
+
+            <!--BORDER WIDTH-->
+            <br><label for="border-size">Choose the border size:</label>
+            <input id="border-width" type="number" placeholder="Enter the width in px">
+
+            <!--BACKGROUND COLOR-->
+            <br><label for="bg-color">Choose the background color:</label>
+            <input id="bg-color" type="text" placeholder="Enter 'red','blue', or 'green'" >
+            <br><button onclick="Change()">Apply Changes</button>
+        </div>
+        
+    </div>
+
+    
+    <script type="text/javascript">
+        var paragraph = document.querySelector(":root");
+        function Change() {
+            paragraph.style.setProperty('--bg-color', document.getElementById("bg-color").value);
+            paragraph.style.setProperty('--border-color', document.getElementById("border-color").value);
+            paragraph.style.setProperty('--border-width', document.getElementById("border-width").value + "px");
+        }
+    </script>
+</body>
+</html>

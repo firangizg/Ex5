@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ex1.js"></script>
+    <title>Password Validator</title>
+</head>
+<body>
+    <!--Two password fields-->
+    <form onsubmit="return Validate()">
+        <label for="vehicle1"> Enter your password: </label><br>
+        <input type="password" id="password">
+        <br><label for="vehicle1"> Enter password again: </label><br>
+        <input type="password" id="confirmPassword">
+        <button type="submit" onclick="validate()">Validate</button>
+    </form>
+</body>
+</html>
